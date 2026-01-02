@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Services | CLIVEMAC Integrated Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #003366;
+      transition: background-color 0.3s ease;
+    }
+    .navbar:hover {
+      background-color: #ffffff !important;
+    }
+    .navbar a { color: #fff !important; }
+    .navbar:hover a { color: #003366 !important; }
+    .navbar-toggler {
+      border: none;
+      outline: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .navbar:hover .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler.close-icon .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M6 6L24 24M6 24L24 6'/%3E%3C/svg%3E");
+    }
+    .navbar:hover .navbar-toggler.close-icon .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M6 6L24 24M6 24L24 6'/%3E%3C/svg%3E");
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      padding: 30px 40px;
+    }
+    footer h5 { font-size: 1.2rem; margin-bottom: 20px; font-weight: bold; }
+    footer ul { list-style: none; padding: 0; }
+    footer ul li { margin-bottom: 12px; }
+    footer ul li a { color: #fff; text-decoration: none; }
+    footer ul li a:hover { text-decoration: underline; }
+    footer .social-icons { display: flex; gap: 20px; margin-top: 20px; }
+    footer .social-icons a img { width: 28px; height: 28px; filter: brightness(0) invert(1); }
+    footer .bottom-text { margin-top: 40px; text-align: center; font-size: 0.9rem; color: #ccc; }
+
+    .services-header {
+      background: url('now13.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .services-header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .services-section {
+      padding: 60px 20px;
+    }
+    .services-section h3 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    .service-box {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .service-box h4 {
+      color: #003366;
+      margin-bottom: 15px;
+    }
+    .service-box p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .service-img {
+      margin: 30px 0;
+      text-align: center;
+    }
+    .service-img img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Large screen adjustments */
+    @media (min-width: 992px) {
+      .services-header {
+        height: 650px;
+      }
+      .services-header h1 {
+        font-size: 70px;
+      }
+      .service-img img{
+      width: 90%;
+      height: 650px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">CLIVELMAC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="service.html">Energy</a></li>
+            <li><a class="dropdown-item" href="utility.html">Utility</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="join us.html">Join Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="services-header">
+  <h1>PIPELINE CONSTRUCTION</h1>
+</div>
+
+<!-- Services Section -->
+<section class="services-section container">
+  <div class="row">
+    <div class="col-md-12 mb-5">
+      <h3>PIPELINE SERVICES AT CLIVELMAC</h3>
+      <p>
+        At CLIVELMAC Integrated Service, our <b>Pipeline Construction</b> services represent the foundation of our expertise and reputation in the energy and utility sector. 
+        We specialize in delivering large-scale, safe, and sustainable pipeline infrastructure that powers industries, communities, and entire economies.  
+        <br><br>
+        Our construction methodology is built on cutting-edge technology, world-class engineering expertise, and strict adherence to global standards. 
+        Every project begins with a deep understanding of client requirements and environmental considerations, ensuring that we design and build pipelines 
+        that are efficient, durable, and environmentally responsible.  
+        <br><br>
+        From <b>oil and gas transmission lines</b> to <b>water and utility pipelines</b>, we manage every stage of the project lifecycle, including design, route surveys, 
+        right-of-way acquisition, material procurement, construction, and commissioning. Our teams of certified welders, safety professionals, and engineers work 
+        collaboratively to ensure quality and precision at every stage.  
+        <br><br>
+        
+        At CLIVELMAC Integrated Service, we understand that pipelines are the lifeblood of modern industry. They are more than just steel structures laid across landscapes—they are critical networks that transport energy, water, and essential resources to industries and communities.<br><br> Without efficient pipeline infrastructure, industrialization stalls, energy costs rise, and communities suffer from unreliable access to vital utilities.
+
+Our focus is on bridging this global challenge by providing pipeline solutions that meet both local and international standards. Whether in oil and gas, water distribution, or renewable energy infrastructure, CLIVELMAC delivers systems designed for performance, safety, and sustainability. <br><br> By aligning with global best practices and adapting them to local realities, we ensure our clients receive infrastructure that supports long-term industrial growth while protecting the environment.
+
+
+        
+      </p>
+      <!-- First Image -->
+      <div class="service-img">
+        <img src="okay1.jpeg" alt="Pipeline Construction Image">
+      
+        
+      </div>
+    </div>
+  </div>
+  
+  
+    <div class="row">
+    <div class="col-md-12 mb-5">
+      <h3>SUSTAINABLITY AND ENVIRONMENT</h3>
+      <p>
+At CLIVELMAC, we believe true engineering success goes beyond delivering projects—it lies in creating solutions that respect and protect the environment. Pipeline construction can pose risks to natural ecosystems, which is why we adopt eco-friendly practices across all stages of our projects.<br><br> From careful route selection that avoids sensitive habitats to the use of corrosion-resistant coatings that reduce leaks and spills, every detail is guided by sustainability.
+
+We implement strict spill-prevention measures, effective waste management, and land restoration programs after construction. Our engineers are trained to use modern monitoring systems that detect pressure loss and potential leaks before they become environmental hazards. <br><br>Beyond compliance, we also work with communities to ensure our projects contribute to both economic growth and ecological balance. By embedding sustainability into our operations, CLIVEMAC guarantees that industrial growth is achieved without compromising the future of our environment.
+
+        <br><br>
+      </p>
+  <!-- Second Image -->
+  <div class="service-img">
+    <img src="okay4.jpeg" alt="Pipeline Work Image">
+  </div>
+    
+      </div>
+    </div>
+  </div>
+  
+  
+      <div class="row">
+    <div class="col-md-12 mb-5">
+      <h3>SAFTEY AND COMMITMENT</h3>
+      <p>
+Safety is the foundation of everything we do at CLIVELMAC. We know that pipeline projects involve high-risk environments—heavy machinery, welding operations, and volatile energy products—and as such, we have built a safety culture that prioritizes the lives of our workforce, our clients, and the communities we serve.<br><br>
+
+Our teams undergo continuous training in occupational safety, emergency response, and international compliance standards such as ISO and API. We invest in advanced protective equipment, strict worksite supervision, and regular audits to maintain zero-incident performance across projects. Every pipeline we deliver is tested not just for functionality but also for its ability to operate safely under the toughest conditions.<br><br>
+
+More importantly, we extend our safety commitment to the environment and communities. By minimizing risks of leaks, explosions, and contamination, we ensure that our operations protect both people and nature. At CLIVEMAC, safety is not a box to tick—it is a way of life, and it defines the excellence of every project we deliver.
+
+
+        <br><br>
+      </p>
+  <!-- Second Image -->
+  <div class="service-img">
+    <img src="okay7.jpeg" alt="Pipeline Work Image">
+  </div>
+    
+      </div>
+    </div>
+  </div>
+  
+  
+  
+      <div class="row">
+    <div class="col-md-12 mb-5">
+      <h3>FUTURE VISION</h3>
+      <p>
+The future of energy and utility infrastructure is rapidly changing, and CLIVELMAC is committed to staying ahead of this transformation. We recognize that traditional pipelines must evolve to meet the demands of renewable energy, cleaner fuels, and smarter monitoring systems. <br><br>This is why we are actively preparing for the development of hydrogen pipelines, renewable-integrated grids, and intelligent infrastructure equipped with real-time monitoring technology.<br><br>
+
+Our vision is to build pipelines that are not just durable, but also adaptive—able to support energy diversification, climate resilience, and industrial expansion for decades to come. <br><br>With continuous investment in research, training, and innovation, CLIVEMAC seeks to lead Africa and beyond into a new era of energy infrastructure. By combining today’s engineering excellence with tomorrow’s technology, we will ensure our clients are prepared for an ever-changing industrial and energy landscape.
+
+
+        <br><br>
+      </p>
+
+    
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Second Image -->
+  <div class="service-img">
+    <img src="okay6.jpeg" alt="Pipeline Work Image">
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>About Us</h5>
+        <ul>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">Our Leadership</a></li>
+          <li><a href="#">Corporate Responsibility</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="service.html">Energy</a></li>
+          <li><a href="utility.html">Utility</a></li>
+          <li><a href="#">Pipeline Management</a></li>
+          <li><a href="#">Engineering Support</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Careers</h5>
+        <ul>
+          <li><a href="join us.html">Join Our Team</a></li>
+          <li><a href="join us.html">Open Positions</a></li>
+          <li><a href="join us.html">Life at CLIVELMAC</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
+          <a href="#"><img src="Facebook.jpg"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-text">
+      <p>&copy; 2025 CLIVELMAC Integrated Service. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const toggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.getElementById('navbarNav');
+  toggler.addEventListener('click', () => {
+    toggler.classList.toggle('close-icon');
+  });
+  navbarCollapse.addEventListener('hidden.bs.collapse', () => {
+    toggler.classList.remove('close-icon');
+  });
+</script>
+</body>
+</html>
